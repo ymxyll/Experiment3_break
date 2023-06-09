@@ -141,10 +141,10 @@ int main(void)
           uint16_t pin = GPIO_PIN_0;
           long int start = HAL_GetTick();
           printf("sending numbers... %ld\n\n", start);
-          for(i = 0; i < 7874; i++)
+          for(k = 0; k < 7874; k++)
           {
             a = 0b0000000;
-            for(j = 0; j < 127; j++)
+            for(i = 0; i < 127; i++)
             {
               HAL_GPIO_WritePin(GPIOF, GPIO_PIN_12, GPIO_PIN_RESET);
               a += 1;
